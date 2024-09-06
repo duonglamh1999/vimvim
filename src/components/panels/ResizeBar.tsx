@@ -7,7 +7,7 @@ export const ResizeBar:React.FC<React.PropsWithChildren<{}>> = ({children}) => {
         const initialWidth = window.innerWidth * 0.5;
         setWidth(initialWidth);
     }, []);
-    const onResize = (event, { size}) => {
+    const onResize = (_event: any, { size}: any) => {
     setWidth(size.width);
   };
 

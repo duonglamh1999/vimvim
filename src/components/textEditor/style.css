@@ -1,0 +1,14 @@
+.ql-toolbar.ql-snow{
+    border:none
+}
+.ql-container.ql-snow{
+    border:none
+}
+.ql-editor{
+    font-size: 15px;
+}
+.quill{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
