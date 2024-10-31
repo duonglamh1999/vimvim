@@ -1,6 +1,6 @@
-import React from 'react';
-import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
-import Link from 'next/link';
+import React from "react";
+import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   return (

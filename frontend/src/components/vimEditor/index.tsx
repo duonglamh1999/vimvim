@@ -1,12 +1,12 @@
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/theme-chrome";
 import "ace-builds/src-noconflict/keybinding-vim"; // Import Vim keybinding
-import './style.css'
+import "./style.css";
 type VimEditorProps = {
- contents?: string,
- disable?: boolean, 
-}
-const VimEditor:React.FC<VimEditorProps> = ({contents,disable=false}) => {
+  contents?: string;
+  disable?: boolean;
+};
+const VimEditor: React.FC<VimEditorProps> = ({ contents, disable = false }) => {
   return (
     <AceEditor
       theme="chrome"
@@ -14,9 +14,9 @@ const VimEditor:React.FC<VimEditorProps> = ({contents,disable=false}) => {
       height="80vh"
       width="100%"
       fontSize={14}
-      value= {contents ??"Type here with Vim keybindings..."}
-      readOnly = {disable}
-      highlightActiveLine = {!disable}
+      value={contents ?? "Type here with Vim keybindings..."}
+      readOnly={disable}
+      highlightActiveLine={!disable}
       setOptions={{
         enableBasicAutocompletion: true,
         enableLiveAutocompletion: true,
